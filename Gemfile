@@ -47,3 +47,8 @@ end
 
 gem 'twitter-bootstrap3-rails'
 gem 'less-rails'
+
+gem 'carrierwave'
+
+gem 'activeadmin', github: 'activeadmin'
+gem 'active_admin_importable'
