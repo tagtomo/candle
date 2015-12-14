@@ -4,5 +4,5 @@ CANDLE
 オープンデータ・ハッカソンのチーム「CANDLE」アウトプット
 
 
-ruby 2.2.2p95<br>
-Rails 4.2.5
+* ruby 2.2.2p95
+* Rails 4.2.5
