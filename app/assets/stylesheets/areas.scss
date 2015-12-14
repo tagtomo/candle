@@ -2,35 +2,51 @@
   background-color:#f8b220;
 }
 
+
 .navbar {
+  margin-bottom: 0px !important;
   background-color:#ffffff;
   color:#ffffff;
-
-}
-
-.navbar-brand {
-  background: url("candle_logo.png") no-repeat left center;
-  background-size: contain;
-  height: 80px;
-  width: 500px;
-  background-color:#ffffff;
-}
-
-.content {
-  background-color:#f8b220;
-}
-
-header.jumbotron {
-  height: 350px;
-  width: 950px;
-  background: url("top.png");
-  background-position: center center;
-  background-size: cover;
-  color: #fff;
-  p {
-    font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  .container{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  .navbar-brand {
+    background: url("candle_logo.png") no-repeat left center;
+    background-size: contain;
+    height: 80px;
+    width: 100%;
+    background-color:#ffffff;
   }
 }
+
+
+
+.container.content {
+  vertical-align: top;
+  background-color:#f8b220;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  header.jumbotron {
+    border-radius:0 0 0 0;
+    height: auto;
+    width: 100%;
+    background: url("top.png");
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    p {
+      font-size: 20px;
+    }
+  }
+  header .container {
+    margin-top: 13%;
+  }
+}
+
 
 .btn-ghost {
   background: transparent;
