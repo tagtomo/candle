@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Articles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Zipcode</th>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Articlestructure</th>
+      <th>Article age</th>
+      <th>Floor plans</th>
+      <th>Sale</th>
+      <th>Rent</th>
+      <th>Refurbishment</th>
+      <th>Sewer connection</th>
+      <th>Parking</th>
+      <th>Optical cable</th>
+      <th>Catv</th>
+      <th>Note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.area_id %></td>
+        <td><%= article.zipcode %></td>
+        <td><%= article.address %></td>
+        <td><%= article.latitude %></td>
+        <td><%= article.longitude %></td>
+        <td><%= article.articlestructure %></td>
+        <td><%= article.article_age %></td>
+        <td><%= article.floor_plans %></td>
+        <td><%= article.sale %></td>
+        <td><%= article.rent %></td>
+        <td><%= article.refurbishment %></td>
+        <td><%= article.sewer_connection %></td>
+        <td><%= article.parking %></td>
+        <td><%= article.optical_cable %></td>
+        <td><%= article.catv %></td>
+        <td><%= article.note %></td>
+        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Article', new_article_path %>

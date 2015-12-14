@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  resources :areas
+  resources :articles
+
+  root to: 'top#index'
+
+  get 'search_search' => 'search#search'
+  get 'search_index' => 'search#index'
+  get 'research_search' => 'research#search'
+  get 'research_index' => 'research#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

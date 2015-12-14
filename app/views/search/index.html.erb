@@ -1,0 +1,20 @@
+
+<h1>物件一覧</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>住所</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.address %></td>
+        <td><%= article.note %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
